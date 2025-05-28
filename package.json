@@ -6,14 +6,19 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "server": "tsx server.ts",
-    "client": "tsx client.ts"
+    "server": "tsx ./src/mcp/server.ts",
+    "client": "tsx ./src/mcp/client.ts",
+    "chat-example": "tsx ./src/langchain-pubsub-test.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.4.1",
   "dependencies": {
+    "@langchain/core": "^0.3.57",
+    "@langchain/langgraph": "^0.2.73",
+    "@langchain/mcp-adapters": "^0.4.5",
+    "@langchain/ollama": "^0.2.0",
     "@modelcontextprotocol/sdk": "^1.12.0",
     "redis": "^5.1.0",
     "tsx": "^4.19.4",

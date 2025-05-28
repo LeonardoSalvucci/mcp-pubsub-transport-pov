@@ -39,7 +39,9 @@ export class PubSubTransport implements Transport {
     }
     await this.subscriber.unsubscribe(this._readTopic);
     await this.subscriber.quit();
-    await this.redisClient.quit();
+    if (this.redisClient.isOpen) {
+      await this.redisClient.quit();
+    }
     this._started = false;
   }
 
