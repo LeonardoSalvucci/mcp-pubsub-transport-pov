@@ -1,5 +1,5 @@
 import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { PubSubTransport } from "./pubsubTransport"
+import { PubSubTransport } from "./pubsubTransport.js"
 import { z } from "zod";
 
 // Create an MCP server

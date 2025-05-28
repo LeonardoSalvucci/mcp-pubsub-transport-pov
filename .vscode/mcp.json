@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "AddPubSub": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["/Users/leonardosalvucci/tests/testing-mcp-proxy/build/server.js"]
+    }
+  }
+}

@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "server": "ts-node server.ts"
+    "build": "tsc",
+    "server": "tsx server.ts",
+    "client": "tsx client.ts"
   },
   "keywords": [],
   "author": "",
